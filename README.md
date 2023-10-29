@@ -22,5 +22,6 @@ script:
 # Thursday > 4p to 8p
     update scrip > 
 script: 
+> /agree /disagree /do not answer
 # night > 9p to 1am
 # > login 
