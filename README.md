@@ -15,9 +15,12 @@ script:
 script: 
 > /agree /disagree /do not answer
 night > 9p to 1am
+
     update script > 
 script: 
 > /agree /disagree /do not answer
 # Thursday > 4p to 8p
     update scrip > 
+script: 
+# night > 9p to 1am
 # > login 
