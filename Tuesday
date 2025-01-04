@@ -20,3 +20,38 @@ Usage:
 Simply run the script, and it will print out the maintenance costs for each task, along with the total annual, monthly, weekly, and daily costs.
 
 Feel free to modify the maintenance_tasks dictionary to include additional tasks or adjust the costs and frequencies as needed for your specific facility.
+
+# Facility Maintenance Cost Calculator
+
+# Define a dictionary to store maintenance tasks and their costs
+maintenance_tasks = {
+    'HVAC Service': {'cost': 150, 'frequency': 4},  # Quarterly
+    'Electrical Inspection': {'cost': 200, 'frequency': 2},  # Semi-Annual
+    'Plumbing Check': {'cost': 100, 'frequency': 1},  # Annual
+    'Fire Safety Inspection': {'cost': 250, 'frequency': 2},  # Semi-Annual
+    'General Cleaning': {'cost': 50, 'frequency': 12},  # Monthly
+}
+
+def calculate_annual_cost(tasks):
+    total_cost = 0
+    for task, details in tasks.items():
+        annual_cost = details['cost'] * details['frequency']
+        total_cost += annual_cost
+        print(f"{task}: {details['cost']} * {details['frequency']} = {annual_cost}")
+    return total_cost
+
+# Calculate the total annual cost
+total_annual_cost = calculate_annual_cost(maintenance_tasks)
+print(f"\nTotal Annual Maintenance Cost: ${total_annual_cost}")
+
+# If needed, calculate monthly cost
+total_monthly_cost = total_annual_cost / 12
+print(f"Total Monthly Maintenance Cost: ${total_monthly_cost:.2f}")
+
+# If needed, calculate weekly cost
+total_weekly_cost = total_annual_cost / 52
+print(f"Total Weekly Maintenance Cost: ${total_weekly_cost:.2f}")
+
+# If needed, calculate daily cost
+total_daily_cost = total_annual_cost / 365
+print(f"Total Daily Maintenance Cost: ${total_daily_cost:.2f}")
