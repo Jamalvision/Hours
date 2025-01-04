@@ -4,3 +4,19 @@
 6p - New Profile
 7p - Manage Online Community Profile Shares
 8p - Online Community
+
+Define the Maintenance Tasks and Costs:
+
+Each maintenance task is stored in a dictionary, with its cost and frequency (number of times per year).
+Function to Calculate Annual Cost:
+
+The calculate_annual_cost function iterates through the tasks and calculates the annual cost for each task by multiplying its cost by its frequency.
+The total annual cost is then returned.
+Calculate and Print Costs:
+
+The script calculates the total annual maintenance cost.
+It also calculates and prints the equivalent monthly, weekly, and daily costs for better budget management.
+Usage:
+Simply run the script, and it will print out the maintenance costs for each task, along with the total annual, monthly, weekly, and daily costs.
+
+Feel free to modify the maintenance_tasks dictionary to include additional tasks or adjust the costs and frequencies as needed for your specific facility.
